@@ -1,5 +1,7 @@
 import './App.css';
-import { Counter } from './components/class/Counter';
+import { Private } from './components/auth/Private';
+import { Profile } from './components/auth/Profile';
+// import { Counter } from './components/class/Counter';
 // import { MutableRef } from './components/ref/MutableRef';
 // import { User } from './components/context/User';
 // import { UserContextProvider } from './components/context/UserContext';
@@ -62,7 +64,8 @@ function App() {
         <User />
       </UserContextProvider> */}
       {/* <MutableRef/> */}
-      <Counter message='This count value is '/>
+      {/* <Counter message='This count value is '/> */}
+      <Private isLoggedIn={true} component={Profile}/>
     </div>
   );
 }
