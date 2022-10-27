@@ -1,5 +1,6 @@
 import './App.css';
-import { RandomNumber } from './components/restriction/RandomNumber';
+import { Toast } from './components/templateliterals/Toast';
+// import { RandomNumber } from './components/restriction/RandomNumber';
 // import { List } from './components/generics/List';
 // import { Private } from './components/auth/Private';
 // import { Profile } from './components/auth/Profile';
@@ -96,7 +97,8 @@ function App() {
         ]}
         onClick={(item) => console.log("item ",item)}
       /> */}
-      <RandomNumber value={10} isPositive/>
+      {/* <RandomNumber value={10} isPositive/> */}
+      <Toast position="center"/>
     </div>
   );
 }
