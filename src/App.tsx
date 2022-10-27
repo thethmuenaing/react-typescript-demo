@@ -1,5 +1,6 @@
 import './App.css';
-import { MutableRef } from './components/ref/MutableRef';
+import { Counter } from './components/class/Counter';
+// import { MutableRef } from './components/ref/MutableRef';
 // import { User } from './components/context/User';
 // import { UserContextProvider } from './components/context/UserContext';
 // import { Box } from './components/context/Box';
@@ -60,7 +61,8 @@ function App() {
       {/* <UserContextProvider>
         <User />
       </UserContextProvider> */}
-      <MutableRef/>
+      {/* <MutableRef/> */}
+      <Counter message='This count value is '/>
     </div>
   );
 }
