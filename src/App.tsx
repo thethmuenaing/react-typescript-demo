@@ -1,6 +1,7 @@
 import './App.css';
-import { User } from './components/context/User';
-import { UserContextProvider } from './components/context/UserContext';
+import { MutableRef } from './components/ref/MutableRef';
+// import { User } from './components/context/User';
+// import { UserContextProvider } from './components/context/UserContext';
 // import { Box } from './components/context/Box';
 // import { ThemeContextProvider } from './components/context/ThemeContext';
 // import { Container } from './components/Container';
@@ -56,9 +57,10 @@ function App() {
       {/* <ThemeContextProvider>
         <Box />
       </ThemeContextProvider> */}
-      <UserContextProvider>
+      {/* <UserContextProvider>
         <User />
-      </UserContextProvider>
+      </UserContextProvider> */}
+      <MutableRef/>
     </div>
   );
 }
