@@ -1,6 +1,7 @@
 import './App.css';
+import { Text } from './components/polymorphic/Text';
 // import { CustomButton } from './components/html/Button';
-import { CustomComponent } from './components/html/CustomComponent';
+// import { CustomComponent } from './components/html/CustomComponent';
 // import { Toast } from './components/templateliterals/Toast';
 // import { RandomNumber } from './components/restriction/RandomNumber';
 // import { List } from './components/generics/List';
@@ -104,7 +105,16 @@ function App() {
       {/* <CustomButton variant="primary" onClick={()=> console.log("Click")}>
         Primary Button
       </CustomButton> */}
-      <CustomComponent name="Vishwas" messageCount={10}/>
+      {/* <CustomComponent name="Vishwas" messageCount={10}/> */}
+      <Text as = "h1" size="lg">
+        Heading
+      </Text>
+      <Text as = "p" size="md">
+        Paragraph
+      </Text>
+      <Text as = "label" htmlFor="someId" size="sm" color='secondary'>
+        label
+      </Text>
     </div>
   );
 }
