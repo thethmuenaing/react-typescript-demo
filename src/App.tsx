@@ -1,5 +1,6 @@
 import './App.css';
-import { CustomButton } from './components/html/Button';
+// import { CustomButton } from './components/html/Button';
+import { CustomComponent } from './components/html/CustomComponent';
 // import { Toast } from './components/templateliterals/Toast';
 // import { RandomNumber } from './components/restriction/RandomNumber';
 // import { List } from './components/generics/List';
@@ -100,9 +101,10 @@ function App() {
       /> */}
       {/* <RandomNumber value={10} isPositive/> */}
       {/* <Toast position="center"/> */}
-      <CustomButton variant="primary" onClick={()=> console.log("Click")}>
+      {/* <CustomButton variant="primary" onClick={()=> console.log("Click")}>
         Primary Button
-      </CustomButton>
+      </CustomButton> */}
+      <CustomComponent name="Vishwas" messageCount={10}/>
     </div>
   );
 }
